@@ -1,8 +1,8 @@
-package com.skyg0d.spring.jwt.security.config;
+package com.crm.pfe.security.config;
 
-import com.skyg0d.spring.jwt.security.jwt.AuthEntryPointJwt;
-import com.skyg0d.spring.jwt.security.jwt.AuthTokenFilter;
-import com.skyg0d.spring.jwt.security.service.UserDetailsServiceImpl;
+import com.crm.pfe.security.jwt.AuthEntryPointJwt;
+import com.crm.pfe.security.jwt.AuthTokenFilter;
+import com.crm.pfe.security.service.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.annotation.Bean;

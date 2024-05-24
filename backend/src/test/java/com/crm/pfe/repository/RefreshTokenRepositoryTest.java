@@ -1,8 +1,8 @@
-package com.skyg0d.spring.jwt.repository;
+package com.crm.pfe.repository;
 
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.model.User;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.model.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 
-import static com.skyg0d.spring.jwt.util.token.RefreshTokenCreator.createRefreshTokenToBeSave;
+import static com.crm.pfe.util.token.RefreshTokenCreator.createRefreshTokenToBeSave;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest

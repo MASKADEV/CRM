@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.util.auth;
+package com.crm.pfe.util.auth;
 
-import com.skyg0d.spring.jwt.security.service.UserDetailsImpl;
-import com.skyg0d.spring.jwt.util.user.UserCreator;
+import com.crm.pfe.security.service.UserDetailsImpl;
+import com.crm.pfe.util.user.UserCreator;
 
 public class UserDetailsImplCreator {
 

@@ -1,6 +1,6 @@
-package com.skyg0d.spring.jwt.util;
+package com.crm.pfe.util;
 
-import com.skyg0d.spring.jwt.payload.UserMachineDetails;
+import com.crm.pfe.payload.UserMachineDetails;
 
 public class GenericCreator {
 

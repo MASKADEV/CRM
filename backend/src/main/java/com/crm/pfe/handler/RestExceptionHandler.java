@@ -1,11 +1,11 @@
-package com.skyg0d.spring.jwt.handler;
+package com.crm.pfe.handler;
 
-import com.skyg0d.spring.jwt.exception.BadRequestException;
-import com.skyg0d.spring.jwt.exception.ResourceNotFoundException;
-import com.skyg0d.spring.jwt.exception.TokenRefreshException;
-import com.skyg0d.spring.jwt.exception.UserAlreadyExistsException;
-import com.skyg0d.spring.jwt.exception.details.ExceptionDetails;
-import com.skyg0d.spring.jwt.exception.details.ValidationExceptionDetails;
+import com.crm.pfe.exception.BadRequestException;
+import com.crm.pfe.exception.ResourceNotFoundException;
+import com.crm.pfe.exception.TokenRefreshException;
+import com.crm.pfe.exception.UserAlreadyExistsException;
+import com.crm.pfe.exception.details.ExceptionDetails;
+import com.crm.pfe.exception.details.ValidationExceptionDetails;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

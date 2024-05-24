@@ -1,9 +1,9 @@
-package com.skyg0d.spring.jwt.service;
+package com.crm.pfe.service;
 
-import com.skyg0d.spring.jwt.exception.ResourceNotFoundException;
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.repository.UserRepository;
+import com.crm.pfe.exception.ResourceNotFoundException;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.User;
+import com.crm.pfe.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -23,8 +23,8 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 
-import static com.skyg0d.spring.jwt.util.role.RoleCreator.createRole;
-import static com.skyg0d.spring.jwt.util.user.UserCreator.createUser;
+import static com.crm.pfe.util.role.RoleCreator.createRole;
+import static com.crm.pfe.util.user.UserCreator.createUser;
 import static org.assertj.core.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)

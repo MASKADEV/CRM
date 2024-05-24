@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt;
+package com.crm.pfe;
 
 //@SpringBootTest
 class SpringBootJwtApplicationTests {

@@ -1,11 +1,11 @@
-package com.skyg0d.spring.jwt.runner;
+package com.crm.pfe.runner;
 
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.property.DefaultDataProps;
-import com.skyg0d.spring.jwt.repository.RoleRepository;
-import com.skyg0d.spring.jwt.repository.UserRepository;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.model.User;
+import com.crm.pfe.property.DefaultDataProps;
+import com.crm.pfe.repository.RoleRepository;
+import com.crm.pfe.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

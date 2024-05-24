@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.payload.response;
+package com.crm.pfe.payload.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;

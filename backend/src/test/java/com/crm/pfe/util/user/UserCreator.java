@@ -1,9 +1,9 @@
-package com.skyg0d.spring.jwt.util.user;
+package com.crm.pfe.util.user;
 
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.request.PromoteRequest;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.request.PromoteRequest;
 
 import java.util.Set;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.exception.details;
+package com.crm.pfe.exception.details;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

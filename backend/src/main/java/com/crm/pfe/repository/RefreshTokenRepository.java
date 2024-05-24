@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.repository;
+package com.crm.pfe.repository;
 
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

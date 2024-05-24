@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.model;
+package com.crm.pfe.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

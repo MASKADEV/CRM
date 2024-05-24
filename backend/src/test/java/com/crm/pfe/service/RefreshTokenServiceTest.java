@@ -1,10 +1,10 @@
-package com.skyg0d.spring.jwt.service;
+package com.crm.pfe.service;
 
-import com.skyg0d.spring.jwt.exception.TokenRefreshException;
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.response.UserTokenResponse;
-import com.skyg0d.spring.jwt.repository.RefreshTokenRepository;
+import com.crm.pfe.exception.TokenRefreshException;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.response.UserTokenResponse;
+import com.crm.pfe.repository.RefreshTokenRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -24,8 +24,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static com.skyg0d.spring.jwt.util.GenericCreator.createUserMachineDetails;
-import static com.skyg0d.spring.jwt.util.token.RefreshTokenCreator.createRefreshToken;
+import static com.crm.pfe.util.GenericCreator.createUserMachineDetails;
+import static com.crm.pfe.util.token.RefreshTokenCreator.createRefreshToken;
 import static org.assertj.core.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)

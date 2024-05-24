@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.util.role;
+package com.crm.pfe.util.role;
 
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.Role;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.Role;
 
 import java.util.UUID;
 

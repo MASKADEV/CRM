@@ -1,6 +1,6 @@
-package com.skyg0d.spring.jwt.security.jwt;
+package com.crm.pfe.security.jwt;
 
-import com.skyg0d.spring.jwt.security.service.UserDetailsImpl;
+import com.crm.pfe.security.service.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;

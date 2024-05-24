@@ -1,12 +1,12 @@
-package com.skyg0d.spring.jwt.controller;
+package com.crm.pfe.controller;
 
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.response.UserTokenResponse;
-import com.skyg0d.spring.jwt.service.AuthService;
-import com.skyg0d.spring.jwt.service.RefreshTokenService;
-import com.skyg0d.spring.jwt.service.UserService;
-import com.skyg0d.spring.jwt.util.MockUtils;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.response.UserTokenResponse;
+import com.crm.pfe.service.AuthService;
+import com.crm.pfe.service.RefreshTokenService;
+import com.crm.pfe.service.UserService;
+import com.crm.pfe.util.MockUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -26,10 +26,10 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.List;
 import java.util.UUID;
 
-import static com.skyg0d.spring.jwt.util.token.RefreshTokenCreator.createRefreshToken;
-import static com.skyg0d.spring.jwt.util.token.RefreshTokenCreator.createUserTokenResponse;
-import static com.skyg0d.spring.jwt.util.user.UserCreator.createPromoteRequest;
-import static com.skyg0d.spring.jwt.util.user.UserCreator.createUser;
+import static com.crm.pfe.util.token.RefreshTokenCreator.createRefreshToken;
+import static com.crm.pfe.util.token.RefreshTokenCreator.createUserTokenResponse;
+import static com.crm.pfe.util.user.UserCreator.createPromoteRequest;
+import static com.crm.pfe.util.user.UserCreator.createUser;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)

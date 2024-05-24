@@ -1,13 +1,13 @@
-package com.skyg0d.spring.jwt.util.auth;
+package com.crm.pfe.util.auth;
 
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.request.LoginRequest;
-import com.skyg0d.spring.jwt.payload.request.SignupRequest;
-import com.skyg0d.spring.jwt.payload.request.TokenRefreshRequest;
-import com.skyg0d.spring.jwt.payload.response.JwtResponse;
-import com.skyg0d.spring.jwt.payload.response.TokenRefreshResponse;
-import com.skyg0d.spring.jwt.util.token.RefreshTokenCreator;
-import com.skyg0d.spring.jwt.util.user.UserCreator;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.request.LoginRequest;
+import com.crm.pfe.payload.request.SignupRequest;
+import com.crm.pfe.payload.request.TokenRefreshRequest;
+import com.crm.pfe.payload.response.JwtResponse;
+import com.crm.pfe.payload.response.TokenRefreshResponse;
+import com.crm.pfe.util.token.RefreshTokenCreator;
+import com.crm.pfe.util.user.UserCreator;
 
 import java.util.List;
 

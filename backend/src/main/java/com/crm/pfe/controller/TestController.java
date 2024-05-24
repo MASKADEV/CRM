@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.controller;
+package com.crm.pfe.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;

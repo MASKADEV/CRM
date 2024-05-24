@@ -1,6 +1,6 @@
-package com.skyg0d.spring.jwt.payload.response;
+package com.crm.pfe.payload.response;
 
-import com.skyg0d.spring.jwt.model.RefreshToken;
+import com.crm.pfe.model.RefreshToken;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 

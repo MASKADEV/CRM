@@ -1,9 +1,9 @@
-package com.skyg0d.spring.jwt.security.jwt;
+package com.crm.pfe.security.jwt;
 
-import com.skyg0d.spring.jwt.exception.details.ExceptionDetails;
-import com.skyg0d.spring.jwt.exception.details.TokenExpiredExceptionDetails;
-import com.skyg0d.spring.jwt.security.service.UserDetailsServiceImpl;
-import com.skyg0d.spring.jwt.util.ExceptionUtils;
+import com.crm.pfe.exception.details.ExceptionDetails;
+import com.crm.pfe.exception.details.TokenExpiredExceptionDetails;
+import com.crm.pfe.security.service.UserDetailsServiceImpl;
+import com.crm.pfe.util.ExceptionUtils;
 import io.jsonwebtoken.ExpiredJwtException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;

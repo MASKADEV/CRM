@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.exception;
+package com.crm.pfe.exception;
 
 public class UserAlreadyExistsException extends RuntimeException {
     public UserAlreadyExistsException(String email) {

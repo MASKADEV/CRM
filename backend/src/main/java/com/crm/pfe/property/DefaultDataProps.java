@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.property;
+package com.crm.pfe.property;
 
 
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.repository;
+package com.crm.pfe.repository;
 
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.Role;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

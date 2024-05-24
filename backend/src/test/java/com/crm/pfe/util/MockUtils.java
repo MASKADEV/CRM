@@ -1,6 +1,6 @@
-package com.skyg0d.spring.jwt.util;
+package com.crm.pfe.util;
 
-import com.skyg0d.spring.jwt.security.service.UserDetailsImpl;
+import com.crm.pfe.security.service.UserDetailsImpl;
 import eu.bitwalker.useragentutils.UserAgent;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
@@ -10,7 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.skyg0d.spring.jwt.util.auth.UserDetailsImplCreator.createUserDetails;
+import static com.crm.pfe.util.auth.UserDetailsImplCreator.createUserDetails;
 
 public class MockUtils {
 

@@ -1,6 +1,6 @@
-package com.skyg0d.spring.jwt.util;
+package com.crm.pfe.util;
 
-import com.skyg0d.spring.jwt.model.ERole;
+import com.crm.pfe.model.ERole;
 
 import java.util.HashMap;
 import java.util.Map;

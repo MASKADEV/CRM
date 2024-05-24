@@ -1,18 +1,18 @@
-package com.skyg0d.spring.jwt.service;
+package com.crm.pfe.service;
 
-import com.skyg0d.spring.jwt.exception.TokenRefreshException;
-import com.skyg0d.spring.jwt.exception.UserAlreadyExistsException;
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.UserMachineDetails;
-import com.skyg0d.spring.jwt.payload.request.SignupRequest;
-import com.skyg0d.spring.jwt.payload.response.JwtResponse;
-import com.skyg0d.spring.jwt.payload.response.TokenRefreshResponse;
-import com.skyg0d.spring.jwt.repository.UserRepository;
-import com.skyg0d.spring.jwt.security.jwt.JwtUtils;
-import com.skyg0d.spring.jwt.security.service.UserDetailsImpl;
-import com.skyg0d.spring.jwt.util.auth.AuthCreator;
+import com.crm.pfe.exception.TokenRefreshException;
+import com.crm.pfe.exception.UserAlreadyExistsException;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.UserMachineDetails;
+import com.crm.pfe.payload.request.SignupRequest;
+import com.crm.pfe.payload.response.JwtResponse;
+import com.crm.pfe.payload.response.TokenRefreshResponse;
+import com.crm.pfe.repository.UserRepository;
+import com.crm.pfe.security.jwt.JwtUtils;
+import com.crm.pfe.security.service.UserDetailsImpl;
+import com.crm.pfe.util.auth.AuthCreator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -26,12 +26,12 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.Optional;
 import java.util.UUID;
 
-import static com.skyg0d.spring.jwt.util.GenericCreator.createUserMachineDetails;
-import static com.skyg0d.spring.jwt.util.auth.AuthCreator.*;
-import static com.skyg0d.spring.jwt.util.auth.UserDetailsImplCreator.createUserDetails;
-import static com.skyg0d.spring.jwt.util.role.RoleCreator.createRole;
-import static com.skyg0d.spring.jwt.util.token.RefreshTokenCreator.createRefreshToken;
-import static com.skyg0d.spring.jwt.util.user.UserCreator.createUser;
+import static com.crm.pfe.util.GenericCreator.createUserMachineDetails;
+import static com.crm.pfe.util.auth.AuthCreator.*;
+import static com.crm.pfe.util.auth.UserDetailsImplCreator.createUserDetails;
+import static com.crm.pfe.util.role.RoleCreator.createRole;
+import static com.crm.pfe.util.token.RefreshTokenCreator.createRefreshToken;
+import static com.crm.pfe.util.user.UserCreator.createUser;
 import static org.assertj.core.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)

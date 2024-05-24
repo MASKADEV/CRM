@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.model;
+package com.crm.pfe.model;
 
 public enum ERole {
     ROLE_USER,

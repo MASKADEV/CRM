@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.repository;
+package com.crm.pfe.repository;
 
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.util.role.RoleCreator;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.util.role.RoleCreator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import java.util.Optional;
 
-import static com.skyg0d.spring.jwt.util.role.RoleCreator.*;
+import static com.crm.pfe.util.role.RoleCreator.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest

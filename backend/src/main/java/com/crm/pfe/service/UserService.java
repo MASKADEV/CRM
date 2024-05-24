@@ -1,11 +1,11 @@
-package com.skyg0d.spring.jwt.service;
+package com.crm.pfe.service;
 
-import com.skyg0d.spring.jwt.exception.ResourceNotFoundException;
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.response.MessageResponse;
-import com.skyg0d.spring.jwt.repository.UserRepository;
-import com.skyg0d.spring.jwt.util.RoleUtils;
+import com.crm.pfe.exception.ResourceNotFoundException;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.response.MessageResponse;
+import com.crm.pfe.repository.UserRepository;
+import com.crm.pfe.util.RoleUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

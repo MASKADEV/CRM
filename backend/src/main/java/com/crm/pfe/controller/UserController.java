@@ -1,13 +1,13 @@
-package com.skyg0d.spring.jwt.controller;
+package com.crm.pfe.controller;
 
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.request.PromoteRequest;
-import com.skyg0d.spring.jwt.payload.response.UserTokenResponse;
-import com.skyg0d.spring.jwt.security.service.UserDetailsImpl;
-import com.skyg0d.spring.jwt.service.AuthService;
-import com.skyg0d.spring.jwt.service.RefreshTokenService;
-import com.skyg0d.spring.jwt.service.UserService;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.request.PromoteRequest;
+import com.crm.pfe.payload.response.UserTokenResponse;
+import com.crm.pfe.security.service.UserDetailsImpl;
+import com.crm.pfe.service.AuthService;
+import com.crm.pfe.service.RefreshTokenService;
+import com.crm.pfe.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

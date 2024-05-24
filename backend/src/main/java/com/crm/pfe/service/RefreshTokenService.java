@@ -1,11 +1,11 @@
-package com.skyg0d.spring.jwt.service;
+package com.crm.pfe.service;
 
-import com.skyg0d.spring.jwt.exception.TokenRefreshException;
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.UserMachineDetails;
-import com.skyg0d.spring.jwt.payload.response.UserTokenResponse;
-import com.skyg0d.spring.jwt.repository.RefreshTokenRepository;
+import com.crm.pfe.exception.TokenRefreshException;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.UserMachineDetails;
+import com.crm.pfe.payload.response.UserTokenResponse;
+import com.crm.pfe.repository.RefreshTokenRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;

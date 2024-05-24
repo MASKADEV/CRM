@@ -1,9 +1,9 @@
-package com.skyg0d.spring.jwt.util.token;
+package com.crm.pfe.util.token;
 
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.response.UserTokenResponse;
-import com.skyg0d.spring.jwt.util.user.UserCreator;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.response.UserTokenResponse;
+import com.crm.pfe.util.user.UserCreator;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

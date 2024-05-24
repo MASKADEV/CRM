@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.exception;
+package com.crm.pfe.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

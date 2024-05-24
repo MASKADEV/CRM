@@ -1,12 +1,12 @@
-package com.skyg0d.spring.jwt.util;
+package com.crm.pfe.util;
 
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.request.LoginRequest;
-import com.skyg0d.spring.jwt.payload.response.JwtResponse;
-import com.skyg0d.spring.jwt.repository.RoleRepository;
-import com.skyg0d.spring.jwt.repository.UserRepository;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.request.LoginRequest;
+import com.crm.pfe.payload.response.JwtResponse;
+import com.crm.pfe.repository.RoleRepository;
+import com.crm.pfe.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpEntity;

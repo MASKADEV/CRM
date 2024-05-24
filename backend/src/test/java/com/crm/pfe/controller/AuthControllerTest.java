@@ -1,15 +1,15 @@
-package com.skyg0d.spring.jwt.controller;
+package com.crm.pfe.controller;
 
-import com.skyg0d.spring.jwt.exception.BadRequestException;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.UserMachineDetails;
-import com.skyg0d.spring.jwt.payload.request.LoginRequest;
-import com.skyg0d.spring.jwt.payload.request.SignupRequest;
-import com.skyg0d.spring.jwt.payload.request.TokenRefreshRequest;
-import com.skyg0d.spring.jwt.payload.response.JwtResponse;
-import com.skyg0d.spring.jwt.payload.response.TokenRefreshResponse;
-import com.skyg0d.spring.jwt.service.AuthService;
-import com.skyg0d.spring.jwt.util.MockUtils;
+import com.crm.pfe.exception.BadRequestException;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.UserMachineDetails;
+import com.crm.pfe.payload.request.LoginRequest;
+import com.crm.pfe.payload.request.SignupRequest;
+import com.crm.pfe.payload.request.TokenRefreshRequest;
+import com.crm.pfe.payload.response.JwtResponse;
+import com.crm.pfe.payload.response.TokenRefreshResponse;
+import com.crm.pfe.service.AuthService;
+import com.crm.pfe.util.MockUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -25,8 +25,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import javax.servlet.http.HttpServletRequest;
 import java.util.UUID;
 
-import static com.skyg0d.spring.jwt.util.auth.AuthCreator.*;
-import static com.skyg0d.spring.jwt.util.user.UserCreator.createUser;
+import static com.crm.pfe.util.auth.AuthCreator.*;
+import static com.crm.pfe.util.user.UserCreator.createUser;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 

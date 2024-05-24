@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.payload.response;
+package com.crm.pfe.payload.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

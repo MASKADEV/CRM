@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.exception;
+package com.crm.pfe.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

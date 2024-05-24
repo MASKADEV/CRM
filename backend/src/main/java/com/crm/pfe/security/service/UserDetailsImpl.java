@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.security.service;
+package com.crm.pfe.security.service;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.skyg0d.spring.jwt.model.User;
+import com.crm.pfe.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;

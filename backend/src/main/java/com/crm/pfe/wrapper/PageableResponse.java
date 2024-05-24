@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.wrapper;
+package com.crm.pfe.wrapper;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonCreator.Mode;

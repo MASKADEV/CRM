@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.util;
+package com.crm.pfe.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

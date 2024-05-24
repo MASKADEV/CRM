@@ -1,7 +1,7 @@
-package com.skyg0d.spring.jwt.security.service;
+package com.crm.pfe.security.service;
 
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.repository.UserRepository;
+import com.crm.pfe.model.User;
+import com.crm.pfe.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.payload;
+package com.crm.pfe.payload;
 
 import lombok.*;
 

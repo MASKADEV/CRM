@@ -1,4 +1,4 @@
-package com.skyg0d.spring.jwt.security.jwt;
+package com.crm.pfe.security.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.log4j.Log4j2;

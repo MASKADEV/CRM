@@ -1,9 +1,9 @@
-package com.skyg0d.spring.jwt.service;
+package com.crm.pfe.service;
 
-import com.skyg0d.spring.jwt.exception.ResourceNotFoundException;
-import com.skyg0d.spring.jwt.model.ERole;
-import com.skyg0d.spring.jwt.model.Role;
-import com.skyg0d.spring.jwt.repository.RoleRepository;
+import com.crm.pfe.exception.ResourceNotFoundException;
+import com.crm.pfe.model.ERole;
+import com.crm.pfe.model.Role;
+import com.crm.pfe.repository.RoleRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

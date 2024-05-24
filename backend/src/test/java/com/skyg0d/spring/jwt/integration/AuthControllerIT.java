@@ -1,16 +1,16 @@
-package com.skyg0d.spring.jwt.integration;
+package com.crm.pfe.integration;
 
-import com.skyg0d.spring.jwt.exception.details.ExceptionDetails;
-import com.skyg0d.spring.jwt.model.RefreshToken;
-import com.skyg0d.spring.jwt.model.User;
-import com.skyg0d.spring.jwt.payload.request.LoginRequest;
-import com.skyg0d.spring.jwt.payload.request.SignupRequest;
-import com.skyg0d.spring.jwt.payload.request.TokenRefreshRequest;
-import com.skyg0d.spring.jwt.payload.response.JwtResponse;
-import com.skyg0d.spring.jwt.payload.response.TokenRefreshResponse;
-import com.skyg0d.spring.jwt.repository.RefreshTokenRepository;
-import com.skyg0d.spring.jwt.repository.UserRepository;
-import com.skyg0d.spring.jwt.util.JWTCreator;
+import com.crm.pfe.exception.details.ExceptionDetails;
+import com.crm.pfe.model.RefreshToken;
+import com.crm.pfe.model.User;
+import com.crm.pfe.payload.request.LoginRequest;
+import com.crm.pfe.payload.request.SignupRequest;
+import com.crm.pfe.payload.request.TokenRefreshRequest;
+import com.crm.pfe.payload.response.JwtResponse;
+import com.crm.pfe.payload.response.TokenRefreshResponse;
+import com.crm.pfe.repository.RefreshTokenRepository;
+import com.crm.pfe.repository.UserRepository;
+import com.crm.pfe.util.JWTCreator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +25,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
 
-import static com.skyg0d.spring.jwt.util.auth.AuthCreator.createLoginRequest;
-import static com.skyg0d.spring.jwt.util.auth.AuthCreator.createSignupRequest;
+import static com.crm.pfe.util.auth.AuthCreator.createLoginRequest;
+import static com.crm.pfe.util.auth.AuthCreator.createSignupRequest;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
