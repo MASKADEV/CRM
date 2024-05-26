@@ -2,6 +2,7 @@ package com.crm.pfe.service;
 
 import com.crm.pfe.model.*;
 import com.crm.pfe.repository.CategoryRepository;
+import com.crm.pfe.repository.ImageRepository;
 import com.crm.pfe.repository.ProductRepository;
 import com.crm.pfe.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
