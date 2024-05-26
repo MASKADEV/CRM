@@ -46,6 +46,9 @@ public class User extends BaseEntity {
     )
     private Set<Role> roles = new HashSet<>();
 
+    @OneToMany
+    private Set<Product> products = new HashSet<>();
+
     public User(String username, String email, String password) {
         this.username = username;
         this.email = email;
