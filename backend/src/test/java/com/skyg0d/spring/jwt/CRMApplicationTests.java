@@ -1,7 +1,7 @@
 package com.crm.pfe;
 
 //@SpringBootTest
-class SpringBootJwtApplicationTests {
+class CRMApplicationTests {
 
     //    @Test
     void contextLoads() {

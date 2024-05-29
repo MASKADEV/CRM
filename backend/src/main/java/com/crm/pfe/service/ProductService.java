@@ -63,9 +63,27 @@ public class ProductService {
         return List.copyOf(user.getProducts());
     }
 
+    // Get all products associated with a user
+    public Product getProductById(UUID productId) {
+        Product product = productRepository.findById(productId).orElseThrow(() -> new RuntimeException("User not found"));
+        return product;
+    }
+
     // Get all products associated with a category
     public List<Product> getProductsByCategory(UUID categoryId) {
         Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new RuntimeException("Category not found"));
         return List.copyOf(category.getProducts());
+    }
+
+    //update product
+    public Product updateProduct(Product product) {
+        Product product1 = productRepository.save(product);
+        return product1;
+    }
+
+    //update product
+    public void deleteProduct(UUID productId) {
+        Product product1 = productRepository.findById(productId).orElseThrow(() -> new RuntimeException("Product not found"));
+        productRepository.delete(product1);
     }
 }
