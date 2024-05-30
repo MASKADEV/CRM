@@ -1,4 +1,4 @@
-package com.crm.pfe;
+package com.crm.rest;
 
 //@SpringBootTest
 class CRMApplicationTests {

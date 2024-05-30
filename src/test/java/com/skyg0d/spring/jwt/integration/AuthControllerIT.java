@@ -1,16 +1,16 @@
-package com.crm.pfe.integration;
+package com.crm.rest.integration;
 
-import com.crm.pfe.exception.details.ExceptionDetails;
-import com.crm.pfe.model.RefreshToken;
-import com.crm.pfe.model.User;
-import com.crm.pfe.payload.request.LoginRequest;
-import com.crm.pfe.payload.request.SignupRequest;
-import com.crm.pfe.payload.request.TokenRefreshRequest;
-import com.crm.pfe.payload.response.JwtResponse;
-import com.crm.pfe.payload.response.TokenRefreshResponse;
-import com.crm.pfe.repository.RefreshTokenRepository;
-import com.crm.pfe.repository.UserRepository;
-import com.crm.pfe.util.JWTCreator;
+import com.crm.rest.exception.details.ExceptionDetails;
+import com.crm.rest.model.RefreshToken;
+import com.crm.rest.model.User;
+import com.crm.rest.payload.request.LoginRequest;
+import com.crm.rest.payload.request.SignupRequest;
+import com.crm.rest.payload.request.TokenRefreshRequest;
+import com.crm.rest.payload.response.JwtResponse;
+import com.crm.rest.payload.response.TokenRefreshResponse;
+import com.crm.rest.repository.RefreshTokenRepository;
+import com.crm.rest.repository.UserRepository;
+import com.crm.rest.util.JWTCreator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +25,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
 
-import static com.crm.pfe.util.auth.AuthCreator.createLoginRequest;
-import static com.crm.pfe.util.auth.AuthCreator.createSignupRequest;
+import static com.crm.rest.util.auth.AuthCreator.createSignupRequest;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

@@ -1,14 +1,13 @@
-package com.crm.pfe.integration;
+package com.crm.rest.integration;
 
-import com.crm.pfe.model.RefreshToken;
-import com.crm.pfe.model.User;
-import com.crm.pfe.payload.request.PromoteRequest;
-import com.crm.pfe.payload.response.MessageResponse;
-import com.crm.pfe.payload.response.UserTokenResponse;
-import com.crm.pfe.repository.RefreshTokenRepository;
-import com.crm.pfe.repository.UserRepository;
-import com.crm.pfe.util.JWTCreator;
-import com.crm.pfe.wrapper.PageableResponse;
+import com.crm.rest.model.RefreshToken;
+import com.crm.rest.model.User;
+import com.crm.rest.payload.request.PromoteRequest;
+import com.crm.rest.payload.response.UserTokenResponse;
+import com.crm.rest.repository.RefreshTokenRepository;
+import com.crm.rest.repository.UserRepository;
+import com.crm.rest.util.JWTCreator;
+import com.crm.rest.wrapper.PageableResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +22,7 @@ import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.Set;
 
-import static com.crm.pfe.util.token.RefreshTokenCreator.createRefreshToken;
+import static com.crm.rest.util.token.RefreshTokenCreator.createRefreshToken;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
