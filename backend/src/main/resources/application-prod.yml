@@ -1,5 +1,0 @@
-app:
-  jwt:
-    secret: ${SECRET_KEY}
-    expirationMs: 3600000 # 1 hour
-    refreshExpirationMs: 2592000000 # 30 days
