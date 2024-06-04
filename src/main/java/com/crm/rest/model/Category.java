@@ -21,12 +21,7 @@ import java.util.UUID;
 @Builder
 @Entity
 @Table(name="category")
-public class Category {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Type(type = "uuid-char")
-    private UUID id;
+public class Category extends BaseEntity {
 
     @NotBlank
     @Column(name="name", nullable = false, length = 50, unique = true)

@@ -18,14 +18,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Entity
 @Table(name ="product")
-public class Product {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Type(type="uuid-char")
-    @Column(name = "id", columnDefinition = "VARCHAR(255)", insertable = false, updatable = false, nullable = false)
-    @Schema(description = "product id")
-    private UUID id;
+public class Product extends BaseEntity{
 
     @Column(updatable = true)
     private String title;

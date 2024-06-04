@@ -13,11 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class ProductImage {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+public class ProductImage extends BaseEntity{
 
     @Column(name="data")
     private byte[] data;
