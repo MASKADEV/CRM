@@ -4,8 +4,11 @@ import com.crm.rest.model.Category;
 import com.crm.rest.payload.request.CategoryRequest;
 import com.crm.rest.repository.CategoryRepository;
 import com.crm.rest.repository.UserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.UUID;
@@ -13,6 +16,7 @@ import java.util.UUID;
 @Service
 public class CategoryService {
 
+    private static final Logger log = LoggerFactory.getLogger(CategoryService.class);
     @Autowired
     private CategoryRepository categoryRepository;
     @Autowired
@@ -28,26 +32,50 @@ public class CategoryService {
         return category;
     }
 
+    @Transactional
     public CategoryRequest saveCategory(CategoryRequest categoryRequest) {
-        Category category = new Category();
-        category.builder().name(categoryRequest.getTitle()).description(categoryRequest.getDescription()).build();
-        if(!categoryRepository.save(category).getName().isEmpty()){
-            CategoryRequest categoryReq1 = new CategoryRequest();
-            categoryReq1.builder().title(category.getName()).description(category.getDescription()).id(category.getId().toString()).build();
-            return categoryReq1;
-        }else {
+        UUID id = UUID.randomUUID();
+        Category category = Category.builder()
+                .id(id)
+                .name(categoryRequest.getTitle())
+                .description(categoryRequest.getDescription())
+                .build();
+
+        category = categoryRepository.save(category);
+
+        if (category != null && !category.getName().isEmpty()) {
+            log.info("Category saved successfully");
+            return CategoryRequest.builder()
+                    .id(id.toString())
+                    .title(category.getName())
+                    .description(category.getDescription())
+                    .build();
+        } else {
             return null;
         }
     }
 
+    @Transactional
     public CategoryRequest updateCategory(CategoryRequest categoryReq) {
-        Category category = getCategoryById(categoryReq.getId());
-        if(!categoryRepository.save(category).getName().isEmpty()){
-            CategoryRequest categoryReq1 = new CategoryRequest();
-            categoryReq1.builder().title(category.getName()).description(category.getDescription()).id(category.getId().toString()).build();
-            return categoryReq1;
-        }else {
-            return null;
+        Category category = getCategoryById(UUID.fromString(categoryReq.getId()));
+        if (category != null) {
+            category.setName(categoryReq.getTitle());
+            category.setDescription(categoryReq.getDescription());
+
+            category = categoryRepository.save(category);
+
+            if (!category.getName().isEmpty()) {
+                return CategoryRequest.builder()
+                        .id(category.getId().toString())
+                        .title(category.getName())
+                        .description(category.getDescription())
+                        .build();
+            }
         }
+        return null;
+    }
+
+    private Category getCategoryById(UUID id) {
+        return categoryRepository.findById(id).orElse(null);
     }
 }
