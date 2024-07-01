@@ -34,9 +34,7 @@ public class CategoryService {
 
     @Transactional
     public CategoryRequest saveCategory(CategoryRequest categoryRequest) {
-        UUID id = UUID.randomUUID();
         Category category = Category.builder()
-                .id(id)
                 .name(categoryRequest.getTitle())
                 .description(categoryRequest.getDescription())
                 .build();
@@ -46,7 +44,7 @@ public class CategoryService {
         if (category != null && !category.getName().isEmpty()) {
             log.info("Category saved successfully");
             return CategoryRequest.builder()
-                    .id(id.toString())
+                    .id(category.getId().toString())
                     .title(category.getName())
                     .description(category.getDescription())
                     .build();
@@ -63,7 +61,6 @@ public class CategoryService {
             category.setDescription(categoryReq.getDescription());
 
             category = categoryRepository.save(category);
-
             if (!category.getName().isEmpty()) {
                 return CategoryRequest.builder()
                         .id(category.getId().toString())
